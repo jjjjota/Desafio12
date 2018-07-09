@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 50px;
+}
+
+.gallery > .thumbnail {
+  transition: 1s;
+  flex: 1;
+  width: 100px;
+  height: 250px;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.sat {
+  -webkit-filter: grayscale(100%);
+  -moz-filter:    grayscale(100%);
+  -ms-filter:     grayscale(100%);
+  -o-filter:      grayscale(100%);
+  filter: gray;
+}
