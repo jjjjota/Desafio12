@@ -12,21 +12,33 @@ Tip: Investigar el evento window.onload
 <head>
   <meta charset="utf-8">
   <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 </head>
 
 
 <body>
-  <!-- <img src="https://ugc.kn3.net/i/origin/http://2.bp.blogspot.com/_KPPkPFVFh04/TUwwdwyiA-I/AAAAAAAAAOY/yIBaNFH436A/s1600/dogo-argentino.jpg" alt="proud doggo">
+  <img src="https://ugc.kn3.net/i/origin/http://2.bp.blogspot.com/_KPPkPFVFh04/TUwwdwyiA-I/AAAAAAAAAOY/yIBaNFH436A/s1600/dogo-argentino.jpg" alt="proud doggo">
   <img src="http://noticiasdeperros.com/img/2012/09/eyestalklight.jpg" alt="little puppy">
+  <img src="https://www.bluecross.org.uk/sites/default/files/assets/images/20311lpr.jpg" alt="dog looking through">
   <img src="http://www.adiestradorcanino.com/webdelperro/wp-content/uploads/2012/12/cachorros-dogo-aleman-1.jpg" alt="multiple puppies">
-
+  <img src="https://media.boingboing.net/wp-content/uploads/2018/03/1920px-WI_Police_Dog.jpg" alt="nice dog">
   <script>
   $(function() {
-
     alert("Ya tenimoh cargao el DOM!");
+  });
 
-  })
-  </script> -->
+  function load() {
+    alert("ya, ahora tamo redy con las pics!");
+  };
+
+  window.onload = load;
+
+  // THIS work the same too.
+  // $(window).on("load", function load() {
+  //   alert("images are loaded");
+  // });
+
+  </script>
 </body>
 
 
